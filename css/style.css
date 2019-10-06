@@ -1,0 +1,264 @@
+.royal-blue {
+  color: #1475D0;
+}
+
+
+.navbar {
+	background: rgba(0,0,0,0);
+	border: 0px;
+	height: 50px;
+}
+.navbar .navbar-nav li:hover {
+	background: rgba(0,0,0,.3);
+}
+
+.navbar-brand {
+	font-family: 'Fredericka the Great', cursive;
+	font-size: 40px;
+	color: #fff !important;
+}
+
+.navbar-nav li a {
+  color: #fff !important;
+  font-size: 15px;
+}
+
+body {
+      position: relative; 
+  }
+
+  html {
+    scroll-behavior: smooth;
+    -webkit-scroll-behavior: smooth;
+  }
+/* Common CSS */
+
+.text-white {
+  color: white;
+}
+
+/*Heading for all sections*/
+  .heading {
+  	position: relative;
+  	top: 0vh;  
+  	color: black;
+    text-align: center;
+  }
+  .heading h1,p {
+  	padding: 10px;
+  }
+  .heading p {
+  	font-family: 'Dancing Script', cursive;
+  	font-weight: bold;
+  	font-size: 20px;
+  }
+  .heading h1 {
+  	font-family: 'Poppins', sans-serif;
+  }
+  .heading h1 {
+  	position: relative;
+  	top: 0vh;
+  	text-transform: uppercase;
+  }
+/* Heading for all section */
+
+/* Go Down buttons */
+.goDown {
+  margin: auto;
+}
+.goDown button {
+  border-radius: 50%;
+  position: absolute;
+  bottom: 5vh;
+  right: 50%;
+  text-align: center;
+  background: transparent;
+  width: 65px;
+  height: 65px;
+
+  }
+  .goDown button:hover {
+    border: 1px solid white;
+    background: rgba(255,255,255,.8);
+  }
+
+
+/* Vertical Line */
+.vl {
+  border-left: 2px solid #D5D8DC;
+  height: 350px; 
+  width: 2px;
+  padding: 0;
+}
+/* Faded hr */
+.bold-hr {
+  border: 0;
+    height: 1px;
+    background-image: linear-gradient(to right, rgba(242, 228, 20, 0), rgba(242, 228, 20, 0.75), rgba(242, 228, 20, 0));
+}
+
+.no-border button {
+  border: 1px solid #17202A !important;
+}
+
+/* .Common CSS*/
+
+  /* Section #1 */
+  #section1 {
+  	position: relative;
+  	padding-top:50px;
+  	height: 100vh;
+  	color: #fff; 
+  	text-align: center;
+  	background: url(../images/bhutan1.jpg);
+  	background-size: cover;
+  	background-position: center;
+  	background-repeat: no-repeat;
+    background-attachment: fixed;
+
+  }
+
+  #section1 p,h1 {
+  	position: relative;
+  	top: 40vh;
+  	color: black;
+  }
+
+  #section1 h1 {
+  	/*font-family: 'Rochester', cursive; */
+  	font-family: 'DM Serif Display', serif;
+  	font-size: 60px;
+/*  	text-decoration-line: underline; */
+  }
+  #section1 p {
+  	font-family: 'Rochester', cursive;
+  	font-weight: bold;
+  	font-size: 25px;
+  	font-style: italic;
+  }
+
+  #section1 .blinking {
+  	display: inline-block;
+  }
+
+   #section1 .blinking h1 {
+    border-right: 3px solid rgb(0,0,0);
+  	overflow: hidden;
+    margin: 0;
+  	white-space: nowrap;
+  	animation: typing 10s steps(16) forwards,
+  			       blink-caret .8s step-end infinite; 
+    animation-iteration-count: infinite;
+  }
+
+  @keyframes blink-caret {
+  	from,to {border-color:transparent;}
+  	50% {border-color: black;}
+  }
+
+  @keyframes typing {
+  	0% {width: 0%;}
+  	30% {width: 100%;}
+  	80% {width: 100%;}
+  	90% {width: 0%;}
+  	100% {width: 0%;}
+
+  }
+
+
+  /* Section #2 */
+  #section2 {
+    position: relative;
+  	padding-top: 60px;
+  	min-height: 100vh;
+  	color: black; 
+  	text-align: center;  	
+  }
+
+  #section2 .about img {
+    width: 300px;
+    height: 300px;
+    border-radius: 50%;
+    box-shadow: 5px 5px 15px 5px grey;
+  }
+  #section2 .about p {
+    text-align: justify;
+  }
+
+  /* Section #3 */
+  #section3 {
+    position: relative;
+  	padding-top: 60px;
+  	height: 100vh;
+  	color: #fff; 
+  	background-color: #2C2C2C;
+  }
+
+
+  /* Section #4 */
+  #section4 {
+    position: relative;
+  	padding-top: 60px;
+  	height: 100vh;
+  	color: #fff; 
+    background: url(../images/light-001.jpg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+   
+  }
+  #section4 .sticky {
+    position: -webkit-sticky;
+    position: sticky;
+  }
+
+  /* Section #5 */
+  #section5 {
+    position: relative;
+  	padding-top: 60px;
+  	height: 100vh;
+  	color: #fff; 
+    background: url(../images/light-003.jpg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+  }
+
+  /* Section #6 */
+  #section6 {
+    position: relative;
+  	padding-top: 60px;
+  	height: 100vh;
+  	color: #fff; 
+  	background-color: #00bcd4;
+  }
+
+
+
+/* Tablets & ipads ( 1200px and below) */
+@media screen and (max-width: 1200px) { 
+	#section1 {
+  	padding-top: 20px;
+  	text-align: center;
+  	background-position: right;
+  }
+  #section1 p,h1 {
+  	top: 12vh;
+  }
+
+ }
+
+
+/* Small devices (576px and below) */
+@media (max-width: 576px) { 
+	#section1 h1 {
+  	font-size: 35px;
+  }
+  #section2 img {
+  	width: 100px;
+  	height: 100px;
+  }
+
+ }
