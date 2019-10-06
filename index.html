@@ -39,15 +39,16 @@ function scrollFunction() {
   if (document.body.scrollTop > 200 || document.documentElement.scrollTop > 200) {
     
     document.getElementById("navbar").style.background = "rgba(0,0,0,.8)";
- 
-    
   } else {
-    
-    document.getElementById("navbar").style.background = "rgba(0,0,0,.1)";
-
-    
+    document.getElementById("navbar").style.background = "rgba(0,0,0,.1)";  
   }
 }
+</script>
+
+<script>
+    $('.navbar-collapse a').click(function(){
+      $(".navbar-collapse").collapse('hide');
+    });
 </script>
 
 </head>
@@ -105,20 +106,22 @@ function scrollFunction() {
     </div><!-- .row heading-->
 
     <div class="row featurette about">
-      <div class="col-md-5 text-center">
+      <div class="col-md-5 text-center profile-img">
         <img src="images/me.jpg">
       </div>
       <div class="col-md-7 text-left">
         <h3 class="featurette-heading">About me</h3>
         <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis, ultricies nec, pellentesque eu, pretium quis, sem. Nulla consequat massa quis enim. Donec pede justo, fringilla vel, aliquet nec, vulputate eget, arcu.</p>
-        <h3 class="featurette-heading">Details</h3>
+        <h3 class="featurette-heading">Skills</h3>
         <p>
           Email: <b>arijitk65@gmail.com</b><br>
           Contact: <b>+91 8017920596</b>
         </p>
       </div>
+      
+        <a class="goDown" href="#section3"><button><img src="images/icons/down_arrow.png"></button></a>
+     
     </div><!-- .row -->
-     <a class="goDown" href="#section3"><button><img class="animated " src="images/icons/down_arrow.png"></button></a>
 </div>
 
 
@@ -129,6 +132,19 @@ function scrollFunction() {
       <p class="text-white">I'm a Creative Web Developer</p>
       <hr class="bold-hr" width="60%">
     </div><!-- .heading -->
+    <div class="container">
+      <div class="row">
+        <h2>Education</h2>
+        <div class="col-md-4">
+          <h4>B.tech in Computer Science</h4>
+          <p>2015 - 2019</p>
+        </div>
+        <div class="col-md-8">
+          <h4>B.tech in Computer Science</h4>
+          <p>2015 - 2019</p>
+        </div>
+      </div>
+    </div>
 
     <a class="goDown" href="#section4"><button><img class="animated " src="images/icons/down_arrow-white.png"></button></a>
 </div>
