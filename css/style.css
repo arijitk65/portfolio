@@ -247,6 +247,12 @@ body {
   #section1 p,h1 {
   	top: 12vh;
   }
+  #section4 {
+    background-position: right;
+  }
+  #section5 {
+    background-position: right;
+  }
 
  }
 
