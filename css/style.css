@@ -45,7 +45,7 @@ body {
     text-align: center;
   }
   .heading h1,p {
-  	padding: 10px;
+  	padding: 5px;
   }
   .heading p {
   	font-family: 'Dancing Script', cursive;
@@ -190,10 +190,13 @@ body {
   /* Section #3 */
   #section3 {
     position: relative;
-    height: 100vh;
-  	padding-top: 60px;
+    min-height: 100vh;
+  	padding: 60px 0;
   	color: #fff; 
   	background-color: #2C2C2C;
+  }
+  #section3 .container .row div {
+    padding: 15px;
   }
 
 
