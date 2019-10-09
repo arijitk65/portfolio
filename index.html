@@ -24,6 +24,9 @@
    <!-- .heading -->
   <link href="https://fonts.googleapis.com/css?family=Dancing+Script:700|Poppins&display=swap" rel="stylesheet">
 
+  <link href="https://fonts.googleapis.com/css?family=Abril+Fatface&display=swap" rel="stylesheet">
+
+
 
  
   <style>
@@ -73,14 +76,6 @@ function scrollFunction() {
           <li><a href="#section4">Skills</a></li>
           <li><a href="#section5">Projects</a></li>
           <li><a href="#section6">Contact</a></li>
-<!--
-          <li class="dropdown"><a class="dropdown-toggle" data-toggle="dropdown" href="#">Section 4 <span class="caret"></span></a>
-            <ul class="dropdown-menu">
-              <li><a href="#section41">Section 4-1</a></li>
-              <li><a href="#section42">Section 4-2</a></li>
-            </ul>
-          </li>
-      -->
         </ul>
       </div>
     </div>
@@ -92,11 +87,11 @@ function scrollFunction() {
   <div class="blinking">
     <h1>Arijeet Karmakar</h1>
   </div>
-  <a class="goDown" href="#section2"><button><img class="animated bounce infinite" src="images/icons/down_arrow.png"></button></a>
+  <a class="goDown animated bounce" href="#section2" data-toggle="tooltip" data-placement="top" data-title="Let's start"><img  src="images/icons/down_arrow.png"></a>
 </div>
 
 <!-- Section About me -->
-<div id="section2" class="container-fluid marketing">
+<div id="section2" class="container marketing">
     <div class="row">
       <div class="col-12 heading">
         <h1 class="royal-blue">Profile</h1>
@@ -110,11 +105,16 @@ function scrollFunction() {
         <img src="images/me.jpg">
       </div>
       <div class="col-md-7 text-left">
-        <h3 class="featurette-heading">About me</h3>
-        <p>I'm a web developer currently based in Bangalore, India. I have a passion for web development, seeking opportunities to apply my coding skills and knowledge of web technologies to deliver responsive and creative websites.</p>
-        <h3 class="featurette-heading">Work</h3>
-        <p>
-         
+        <h2 class="featurette-heading">About me</h2>
+        <p class="lead">Hi, I'm a web developer currently based in Bangalore, India. I have a passion for web development, seeking opportunities to apply my coding skills and knowledge of web technologies to deliver responsive and creative websites.</p>
+        <br>
+        <h2 class="featurette-heading">Skills</h2>
+        <p class="skills">
+          <img src="images/logos/html5.png" alt="HTML5" data-toggle="tooltip" data-placement="bottom" data-title="HTML">
+          <img src="images/logos/css3.png" alt="CSS3" data-toggle="tooltip" data-placement="top" data-title="CSS">
+          <img src="images/logos/JavaScript.png" alt="JavaScript" data-toggle="tooltip" data-placement="bottom" data-title=" JavaScript">
+          <img src="images/logos/bootstrap.jpg" alt="Bootstrap" data-toggle="tooltip" data-placement="top" data-title="Bootstrap">
+          <img src="images/logos/dialogflow.png" alt="Dialogflow" data-toggle="tooltip" data-placement="bottom" data-title=" Google's Dialogflow">
         </p>
       </div>
       
@@ -134,38 +134,59 @@ function scrollFunction() {
     <div class="container">
       <div class="row">
         <h3>Education</h3>
-        <div class="col-md-4 " style="background: rgba(0,0,0,.4);">
+        <div class="col-md-4 linear-02">
           <h4>B.tech in Computer Science</h4>
           <p>2015 - 2019</p>
         </div>
-        <div class="col-md-8" style="background: rgba(0,0,0,.8);">
+        <div class="col-md-8" style="background: rgba(0,0,0,1);">
           <h4>Calcutta Institute Of Engineering And Management</h4>
           <p>DGPA: 7.31</p>
         </div>
       </div><!-- .row -->
        <div class="row">
-        <h3>Training & Certification</h3>
-        <div class="col-md-4" style="background: rgba(0,0,0,.4);">
+        <h3>Certifications</h3>
+        <div class="col-md-4 linear-02">
           <h4>Web Development</h4>
           <p>December 2017</p>
         </div>
-        <div class="col-md-8" style="background: rgba(0,0,0,.8);">
+        <div class="col-md-8" style="background: rgba(0,0,0,1);">
           <h4>MyWBUT</h4>
           <p>HTML, CSS, PHP, MySQL</p>
         </div>
       </div><!-- .row --><br>
       <div class="row">
-        
-        <div class="col-md-4 " style="background: rgba(0,0,0,.4);">
+        <div class="col-md-4 linear-02">
           <h4>Application Development</h4>
           <p>June 2018</p>
         </div>
-        <div class="col-md-8" style="background: rgba(0,0,0,.8);">
+        <div class="col-md-8" style="background: rgba(0,0,0,1);">
           <h4>South Eastern Railway</h4>
           <p>Android, PHP, Firebase</p>
         </div>
       </div><!-- .row -->
 
+      <div class="row">
+        <h3>Training</h3>
+        <div class="col-md-4 linear-02">
+          <h4>Internship</h4>
+          <p>October 2018 - June 2019</p>
+        </div>
+        <div class="col-md-8" style="background: rgba(0,0,0,1);">
+          <h4>G.I Labs</h4>
+          <p>Web development, A.I. Chatbot Development using Dialogflow</p>
+        </div>
+      </div><!-- .row -->
+      <br>
+      <div class="row">
+        <div class="col-md-4 linear-02">
+          <h4>Jr. Web Developer</h4>
+          <p>September 2019 - Ongoing</p>
+        </div>
+        <div class="col-md-8" style="background: rgba(0,0,0,1);">
+          <h4>Logo Design Company Bangalore</h4>
+          <p>Web developer</p>
+        </div>
+      </div><!-- .row -->
     </div>
 
 <!--    <a class="goDown" href="#section4"><button><img class="animated " src="images/icons/down_arrow-white.png"></button></a> -->
@@ -182,7 +203,9 @@ function scrollFunction() {
   
 <!-- Section #1 -->
 <div id="section5" class="container-fluid">
- 
+ <div class="col-12 heading">
+      <h1 class="royal-blue sticky">Projects</h1>
+    </div><!-- .heading -->
 <!--    <a class="goDown" href="#section6"><button><img class="animated" src="images/icons/down_arrow-white.png"></button></a> -->
 </div>
 
@@ -191,10 +214,30 @@ function scrollFunction() {
   <div class="col-12 heading">
       <h1 class="royal-blue">Contact</h1>
       <p class="text-white">Get in touch</p>
-      <hr class="bold-hr" width="60%">
+      <hr class="bold-hr" width="10%">
     </div><!-- .heading -->
-    <a class="goDown" href="#section1"><button><img class="animated" src="images/icons/up_arrow.png"></button></a> 
-</div>
 
+<!--    <button onclick="document.getElementById('section6').src=url('../images/light-001.jpg')"><img class="light-off" src="images/icons/light_off.png"></button>
+ --> 
+  <div class="container">
+    <div class="col-6 text-center">
+      <h5 class="like-my-profile">Do you<br> like<br> my profile?</h5> 
+      <button class="btn btn-lg btn-success" data-toggle="tooltip" data-placement="right" title="Tell me how can I help?">Send me an email</button>
+    </div>
+    <br>
+    <div class="col-12 text-center">
+       <p>OR</p>
+      <a href="">Download CV</a>
+    </div>
+  </div>  
+   
+    <a class="goUp" href="#section1" data-toggle="tooltip" data-placement="top" title="Let's start again. Shall we?"> 
+    <img class="animated" src="images/icons/up_arrow.png"></a>
+</div>
+<script>
+  $(function () {
+  $('[data-toggle="tooltip"]').tooltip()
+})
+</script>
 </body>
 </html>
