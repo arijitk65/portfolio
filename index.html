@@ -14,6 +14,8 @@
   <!-- Animation for this page -->
   <link rel="stylesheet" type="text/css" href="css/animate.css">
   
+  <!-- Add icon library -->
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 
   <!-- Google fonts -->
 
@@ -49,9 +51,13 @@ function scrollFunction() {
 </script>
 
 <script>
-    $('.navbar-collapse a').click(function(){
-      $(".navbar-collapse").collapse('hide');
-    });
+    $(function(){ 
+     var navMain = $(".navbar-collapse");
+
+     navMain.on("click", "a", null, function () {
+         navMain.collapse('hide');
+     });
+ });
 </script>
 
 </head>
@@ -59,23 +65,23 @@ function scrollFunction() {
 
 <nav id="navbar" class="navbar navbar-inverse navbar-fixed-top">
   <div class="container-fluid">
-    <div class="navbar-header">
+    
         <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
           <span class="icon-bar"></span>
           <span class="icon-bar"></span>
           <span class="icon-bar"></span>                        
       </button>
-      <a class="navbar-brand" href="index.html">Ak</a>
-    </div>
+      <a class="navbar-brand animated pulse" href="index.html">Ak</a>
+    
     <div>
       <div class="collapse navbar-collapse" id="myNavbar">
         <ul class="nav navbar-nav">
-          <li><a href="#section1">Home</a></li>
-          <li><a href="#section2">About</a></li>
-          <li><a href="#section3">Experience</a></li>
-          <li><a href="#section4">Skills</a></li>
-          <li><a href="#section5">Projects</a></li>
-          <li><a href="#section6">Contact</a></li>
+          <li class="animated fadeInDown"><a href="#section1">Home</a></li>
+          <li class="animated fadeInDown"><a href="#section2">About</a></li>
+          <li class="animated fadeInDown"><a href="#section3">Experience</a></li>
+          <li class="animated fadeInDown"><a href="#section4">Skills</a></li>
+          <li class="animated fadeInDown"><a href="#section5">Projects</a></li>
+          <li class="animated fadeInDown"><a href="#section6">Contact</a></li>
         </ul>
       </div>
     </div>
@@ -106,7 +112,7 @@ function scrollFunction() {
       </div>
       <div class="col-md-7 text-left">
         <h2 class="featurette-heading">About me</h2>
-        <p class="lead">Hi, I'm a web developer currently based in Bangalore, India. I have a passion for web development, seeking opportunities to apply my coding skills and knowledge of web technologies to deliver responsive and creative websites.</p>
+        <p class="lead" style="font-size: 18px">Hi, I'm a web developer currently based in Bangalore, India. I have a passion for web development, seeking opportunities to apply my coding skills and knowledge of web technologies to deliver responsive and creative websites.</p>
         <br>
         <h2 class="featurette-heading">Skills</h2>
         <p class="skills">
@@ -131,58 +137,68 @@ function scrollFunction() {
 
       <hr class="bold-hr" width="60%">
     </div><!-- .heading -->
-    <div class="container">
+    <div class="container experiences">
       <div class="row">
         <h3>Education</h3>
-        <div class="col-md-4 linear-02">
+        <div class="col-md-4">
           <h4>B.tech in Computer Science</h4>
           <p>2015 - 2019</p>
         </div>
-        <div class="col-md-8" style="background: rgba(0,0,0,1);">
+        <div class="col-md-8" >
           <h4>Calcutta Institute Of Engineering And Management</h4>
           <p>DGPA: 7.31</p>
         </div>
+      </div><!-- .row --><br>
+      <div class="row">
+        <div class="col-md-4">
+          <h4>Higher Secondary</h4>
+          <p>Passing Year - 2015</p>
+        </div>
+        <div class="col-md-8" >
+          <h4>WBBHSE</h4>
+          <p>Percentage: 66.4</p>
+        </div>
       </div><!-- .row -->
+      
        <div class="row">
         <h3>Certifications</h3>
-        <div class="col-md-4 linear-02">
+        <div class="col-md-4">
           <h4>Web Development</h4>
           <p>December 2017</p>
         </div>
-        <div class="col-md-8" style="background: rgba(0,0,0,1);">
+        <div class="col-md-8" >
           <h4>MyWBUT</h4>
           <p>HTML, CSS, PHP, MySQL</p>
         </div>
-      </div><!-- .row --><br>
+      </div><!-- .row --><br> 
       <div class="row">
-        <div class="col-md-4 linear-02">
+        <div class="col-md-4">
           <h4>Application Development</h4>
           <p>June 2018</p>
         </div>
-        <div class="col-md-8" style="background: rgba(0,0,0,1);">
+        <div class="col-md-8" >
           <h4>South Eastern Railway</h4>
           <p>Android, PHP, Firebase</p>
         </div>
       </div><!-- .row -->
-
+      
       <div class="row">
         <h3>Training</h3>
-        <div class="col-md-4 linear-02">
+        <div class="col-md-4">
           <h4>Internship</h4>
           <p>October 2018 - June 2019</p>
         </div>
-        <div class="col-md-8" style="background: rgba(0,0,0,1);">
+        <div class="col-md-8" >
           <h4>G.I Labs</h4>
-          <p>Web development, A.I. Chatbot Development using Dialogflow</p>
+          <p>Web development, A.I. chatbot development using Dialogflow</p>
         </div>
-      </div><!-- .row -->
-      <br>
+      </div><!-- .row --><br>
       <div class="row">
-        <div class="col-md-4 linear-02">
+        <div class="col-md-4">
           <h4>Jr. Web Developer</h4>
           <p>September 2019 - Ongoing</p>
         </div>
-        <div class="col-md-8" style="background: rgba(0,0,0,1);">
+        <div class="col-md-8" >
           <h4>Logo Design Company Bangalore</h4>
           <p>Web developer</p>
         </div>
@@ -221,13 +237,19 @@ function scrollFunction() {
  --> 
   <div class="container">
     <div class="col-6 text-center">
-      <h5 class="like-my-profile">Do you<br> like<br> my profile?</h5> 
-      <button class="btn btn-lg btn-success" data-toggle="tooltip" data-placement="right" title="Tell me how can I help?">Send me an email</button>
+      <h5 class="like-my-profile animated fadeInLeft">Did you<br> like<br> my profile?</h5> 
+      <button class="btn btn-lg btn-success" data-toggle="tooltip" data-placement="right" title="Tell me how can I help?"><i class="fa fa-envelope-o" style="margin: 0;padding: 5px; padding-left: 0;"></i>Send me an email</button>
     </div>
     <br>
     <div class="col-12 text-center">
        <p>OR</p>
-      <a href="">Download CV</a>
+      <a href="resume-arijeet-karmakar.pdf" download>Download CV</a><br>
+      <p>OR</p>
+      <p>
+        <a href="https://www.linkedin.com/in/arijeet-karmakar" target="_blank" class="fa fa-linkedin" data-toggle="tooltip" data-placement="left" data-title="Connect on Linkedin"></a>
+        <a href="#" class="fa fa-instagram" data-toggle="tooltip" data-placement="right" data-title="Connect on Instagram"></a>
+      </p>
+      
     </div>
   </div>  
    
