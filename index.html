@@ -28,12 +28,7 @@
 
   <link href="https://fonts.googleapis.com/css?family=Abril+Fatface&display=swap" rel="stylesheet">
 
-
-
- 
-  <style>
-  
-  </style>
+  <link href="https://fonts.googleapis.com/css?family=Grenze&display=swap" rel="stylesheet">
 
 
    <script>
@@ -79,7 +74,7 @@ function scrollFunction() {
           <li class="animated fadeInDown"><a href="#section1">Home</a></li>
           <li class="animated fadeInDown"><a href="#section2">About</a></li>
           <li class="animated fadeInDown"><a href="#section3">Experience</a></li>
-          <li class="animated fadeInDown"><a href="#section4">Hobbies</a></li>
+          <li class="animated fadeInDown"><a href="#section4">Skills</a></li>
           <li class="animated fadeInDown"><a href="#section5">Projects</a></li>
           <li class="animated fadeInDown"><a href="#section6">Contact</a></li>
         </ul>
@@ -111,21 +106,19 @@ function scrollFunction() {
         <img src="images/me.jpg">
       </div>
       <div class="col-md-7 text-left">
-        <h2 class="featurette-heading">About me</h2>
+        <h2 class="featurette-heading font-grenze">About me</h2>
         <p class="lead" style="font-size: 18px">Hi, I'm a web developer currently based in Bangalore, India. I have a passion for web development, seeking opportunities to apply my coding skills and knowledge of web technologies to deliver responsive and creative websites.</p>
-        <br>
-        <h2 class="featurette-heading">Skills</h2>
-        <p class="skills">
-          <img src="images/logos/html5.png" alt="HTML5" data-toggle="tooltip" data-placement="bottom" data-title="HTML">
-          <img src="images/logos/css3.png" alt="CSS3" data-toggle="tooltip" data-placement="top" data-title="CSS">
-          <img src="images/logos/JavaScript.png" alt="JavaScript" data-toggle="tooltip" data-placement="bottom" data-title=" JavaScript">
-          <img src="images/logos/bootstrap.jpg" alt="Bootstrap" data-toggle="tooltip" data-placement="top" data-title="Bootstrap">
-          <img src="images/logos/dialogflow.png" alt="Dialogflow" data-toggle="tooltip" data-placement="bottom" data-title=" Google's Dialogflow">
+      </div>
+      <div class="col-md-6 text-left poi">
+        <h2 class="featurette-heading font-grenze">My <span data-toggle="tooltip" data-placement="right" data-title="Point Of Interest">POI</span></h2>
+        <ul style="font-size: 18px">
+          <li>Programming</li>
+          <li>Creative Art designing</li>
+          <li>Robotics</li>
+          <li>Artificial Intelligence</li>
+          <li>Photography</li>
         </p>
       </div>
-      
-  <!--      <a class="goDown" href="#section3"><button><img src="images/icons/down_arrow.png"></button></a> -->
-     
     </div><!-- .row -->
 </div>
 
@@ -134,12 +127,12 @@ function scrollFunction() {
 <div id="section3" class="container-fluid p-0">
    <div class="col-12 heading">
       <h1 class="royal-blue">Experience</h1>
-
+       <p>Things I've done so far</p>
       <hr class="bold-hr" width="60%">
     </div><!-- .heading -->
     <div class="container experiences">
       <div class="row">
-        <h3>Education</h3>
+        <h3 class="font-grenze">Education</h3>
         <div class="col-md-4">
           <h4>B.tech in Computer Science</h4>
           <p>2015 - 2019</p>
@@ -161,7 +154,7 @@ function scrollFunction() {
       </div><!-- .row -->
       
        <div class="row">
-        <h3>Certifications</h3>
+        <h3 class="font-grenze">Certifications</h3>
         <div class="col-md-4">
           <h4>Web Development</h4>
           <p>December 2017</p>
@@ -182,18 +175,9 @@ function scrollFunction() {
         </div>
       </div><!-- .row -->
       
+
       <div class="row">
-        <h3>Training</h3>
-        <div class="col-md-4">
-          <h4>Internship</h4>
-          <p>October 2018 - June 2019</p>
-        </div>
-        <div class="col-md-8" >
-          <h4>G.I Labs</h4>
-          <p>Web development, A.I. chatbot development using Dialogflow</p>
-        </div>
-      </div><!-- .row --><br>
-      <div class="row">
+        <h3 class="font-grenze">Careers</h3>
         <div class="col-md-4">
           <h4>Jr. Web Developer</h4>
           <p>September 2019 - Ongoing</p>
@@ -201,6 +185,16 @@ function scrollFunction() {
         <div class="col-md-8" >
           <h4>Logo Design Company Bangalore</h4>
           <p>Web developer</p>
+        </div>
+      </div><!-- .row --><br>
+      <div class="row">
+        <div class="col-md-4">
+          <h4>Internship</h4>
+          <p>October 2018 - June 2019</p>
+        </div>
+        <div class="col-md-8" >
+          <h4>G.I Labs</h4>
+          <p>Web developer, A.I. chatbot and voicebot developer using Dialogflow</p>
         </div>
       </div><!-- .row -->
     </div>
@@ -211,57 +205,190 @@ function scrollFunction() {
 <!-- Section 4 -->
 <div id="section4" class="container-fluid">
   <div class="col-12 heading">
-    <h1 class="royal-blue sticky">Hobbies</h1>
-    <p>Things I like</p>
+    <h1 class="royal-blue sticky">Skills</h1>
+    <p>Things I know</p>
     <hr class="bold-hr" width="60%">
   </div><!-- .heading -->
-
-  <div class="container">
-    <div class="row">
-      <p style="color: black; text-align: center; font-size: 25px; padding:20px;">Photography</p>
-      <div class="col-md-4">
-        <div class="card" style="color: black;">
-          <img src="images/view_01.JPG" class="card-img-top" alt="..." style="width: 100%; border-radius: 10px;">
-          <div class="card-body">
-            <h5 class="card-title">Card title</h5>
-            <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-            <a href="#" class="btn btn-primary">Go somewhere</a>
-          </div>
+  <br>
+   <div class="container">
+      <div class="row">
+        <div class="col-md-12">
+          <table class="table table-borderless">
+            <tbody>
+              <tr>
+                <th scope="row"><img src="images/logos/html5.png"></th>
+                <td>HTML5</td>
+                <td>
+                  <i class="fa fa-star" aria-hidden="true"></i>
+                  <i class="fa fa-star" aria-hidden="true"></i>
+                  <i class="fa fa-star" aria-hidden="true"></i>
+                  <i class="fa fa-star" aria-hidden="true"></i>
+                  <i class="fa fa-star" aria-hidden="true"></i>
+                </td>
+              </tr>
+              <tr>
+                 <th scope="row"><img src="images/logos/css3.png"></th>
+                <td>CSS3</td>
+                <td>
+                  <i class="fa fa-star" aria-hidden="true"></i>
+                  <i class="fa fa-star" aria-hidden="true"></i>
+                  <i class="fa fa-star" aria-hidden="true"></i>
+                  <i class="fa fa-star" aria-hidden="true"></i>
+                  <i class="fa fa-star" aria-hidden="true"></i>
+                </td>
+              </tr>
+              <tr>
+               <th scope="row"><img src="images/logos/JavaScript.png"></th>
+                <td>JavaScript</td>
+                <td>
+                  <i class="fa fa-star" aria-hidden="true"></i>
+                  <i class="fa fa-star" aria-hidden="true"></i>
+                  <i class="fa fa-star" aria-hidden="true"></i>
+                  <i class="fa fa-star" aria-hidden="true"></i>
+                </td>
+              </tr>
+              <tr>
+               <th scope="row"><img src="images/logos/bootstrap.jpg"></th>
+                <td>Bootstrap</td>
+                <td>
+                  <i class="fa fa-star" aria-hidden="true"></i>
+                  <i class="fa fa-star" aria-hidden="true"></i>
+                  <i class="fa fa-star" aria-hidden="true"></i>
+                  <i class="fa fa-star" aria-hidden="true"></i>
+                  <i class="fa fa-star" aria-hidden="true"></i>
+                </td>
+              </tr>
+              <tr>
+               <th scope="row"><img src="images/logos/dialogflow-1.png"></th>
+                <td>Dialogflow</td>
+                <td>
+                  <i class="fa fa-star" aria-hidden="true"></i>
+                  <i class="fa fa-star" aria-hidden="true"></i>
+                  <i class="fa fa-star" aria-hidden="true"></i>
+                  <i class="fa fa-star" aria-hidden="true"></i>
+                </td>
+              </tr>
+              <tr>
+               <th scope="row"><img src="images/logos/php.png"></th>
+                <td>PHP</td>
+                <td>
+                  <i class="fa fa-star" aria-hidden="true"></i>
+                  <i class="fa fa-star" aria-hidden="true"></i>
+                  <i class="fa fa-star" aria-hidden="true"></i>
+                  <i class="fa fa-star" aria-hidden="true"></i>
+                </td>
+              </tr>
+              <tr>
+               <th scope="row"><img src="images/logos/jquery.png"></th>
+                <td>jQuery</td>
+                <td>
+                  <i class="fa fa-star" aria-hidden="true"></i>
+                  <i class="fa fa-star" aria-hidden="true"></i>
+                  <i class="fa fa-star" aria-hidden="true"></i>
+                  <i class="fa fa-star" aria-hidden="true"></i>
+                </td>
+              </tr>
+              <tr>
+               <th scope="row"><img src="images/logos/wordpress.png"></th>
+                <td>Wordpress</td>
+                <td>
+                  <i class="fa fa-star" aria-hidden="true"></i>
+                  <i class="fa fa-star" aria-hidden="true"></i>
+                  <i class="fa fa-star" aria-hidden="true"></i>
+                  <i class="fa fa-star" aria-hidden="true"></i>
+                </td>
+              </tr>
+              <tr>
+               <th scope="row"><img src="images/logos/vue.png"></th>
+                <td>Vue</td>
+                <td>
+                  <i class="fa fa-star" aria-hidden="true"></i>
+                  <i class="fa fa-star" aria-hidden="true"></i>
+                </td>
+              </tr>
+            </tbody>
+          </table>
         </div>
-      </div><!-- .col-md-4 -->
-      <div class="col-md-4">
-        <div class="card" style="color: black;">
-          <img src="images/view_02.JPG" class="card-img-top" alt="..." style="width: 100%; border-radius: 10px;">
-          <div class="card-body">
-            <h5 class="card-title">Card title</h5>
-            <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-            <a href="#" class="btn btn-primary">Go somewhere</a>
-          </div>
-        </div>
-      </div><!-- .col-md-4 -->
-      <div class="col-md-4">
-        <div class="card" style="color: black;">
-          <img src="images/view_03.JPG" class="card-img-top" alt="..." style="width: 100%; border-radius: 10px;">
-          <div class="card-body">
-            <h5 class="card-title">Card title</h5>
-            <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-            <a href="images/view_03.JPG" target="_blank" class="btn btn-primary">View full image</a>
-          </div>
-        </div>
-      </div><!-- .col-md-4 -->
+      </div>
     </div>
-  </div>
-  <!--      <a class="goDown no-border" href="#section5"><button><img class="animated " src="images/icons/down_arrow-white.png"></button></a> -->
+ 
 </div>
   
 <!-- Section #1 -->
 <div id="section5" class="container-fluid">
  <div class="col-12 heading">
       <h1 class="royal-blue sticky">Projects</h1>
+      <p>Some of my work</p>
+    <hr class="bold-hr" width="60%">
     </div><!-- .heading -->
-<!--    <a class="goDown" href="#section6"><button><img class="animated" src="images/icons/down_arrow-white.png"></button></a> -->
+    <div class="container">
+    <div class="row">
+      <h3 class="font-grenze">Websites</h3>
+      <div class="col-md-6">
+        <div class="card">
+          <img src="images/webshots/CreativeDesignCompany.JPG" class="card-img-top" alt="Creative Design Company">
+          <div class="card-body">
+            <a target="_blank" href="http://bangaloredesigncompany.com/creativedesigncompany/">Visit website</a>
+            <a target="_blank" href="images/websites/CreativeDesignCompany.png" style="float: right;">View full image</a>  
+          </div>
+        </div>
+      </div><!--/.col-md-6 -->
+      <div class="col-md-6">
+        <div class="card">
+          <img src="images/webshots/ShreyasExports.JPG" class="card-img-top" alt="Shreyas Exports">
+          <div class="card-body">
+            <a target="_blank" href="http://bangaloredesigncompany.com/shreyas/">Visit website</a>
+            <a target="_blank" href="images/websites/ShreyasExports.png" style="float: right;">View full image</a>     
+          </div>
+        </div>
+      </div><!--/.col-md-6 -->
+      <div class="col-md-6">
+        <div class="card">
+          <img src="images/webshots/CleanCare.JPG" class="card-img-top" alt="Clean Care">
+          <div class="card-body">
+            <a target="_blank" href="http://bangaloredesigncompany.com/cleanCare/">Visit website</a>
+            <a target="_blank" href="images/websites/CleanCare.png" style="float: right;">View full image</a>     
+          </div>
+        </div>
+      </div><!--/.col-md-6 -->
+      <div class="col-md-6">
+        <div class="card">
+          <img src="images/webshots/AarkayInternational.JPG" class="card-img-top" alt="Aarkay International">
+          <div class="card-body">
+            <a target="_blank" href="http://bangaloredesigncompany.com/aarkay/">Visit website</a>
+            <a target="_blank" href="images/websites/AarkayInternational.png" style="float: right;">View full image</a>     
+          </div>
+        </div>
+      </div><!--/.col-md-6 -->
+    </div><!--/.row -->
+    <hr>
+    <div class="row">
+      <h3 class="font-grenze">Blog</h3>
+      <div class="col-md-6">
+        <div class="card">
+          <img src="images/webshots/blog-wordpress.JPG" class="card-img-top" alt="Wordpress Blog">
+          <div class="card-body">
+            <a target="_blank" href="https://beautifulplaces.art.blog/2019/04/28/the-journey-begins/">Visit website</a>  
+          </div>
+        </div>
+      </div><!--/.col-md-6 -->
+    </div><!-- /.row -->
+    <hr>
+    <div class="row">
+      <h3 class="font-grenze">Arduino Project</h3>
+      <div class="col-md-6">
+        <img src="images/webshots/arduino-1.jpg" width="50%">
+        <img src="images/webshots/arduino-2.jpg" width="50%">
+      </div>
+      <div class="col-md-6">
+        <h2>Glow in the dark</h2>
+        <p>is an arduino device capable of understanding the presence or absence of light in the surrounding. A set of LED's connected with this device will glow as soon as the light goes off. </p>
+        <a href="https://docs.google.com/document/d/1Qnnq6nFA1RGnaumH_3Xa4QYjWqTQtsVQWwtepdzwr3k/edit" target="_blank" class="btn btn-dark">See documentation</a>
+      </div>
+    </div><!-- /.row -->
+  </div>
 </div>
-
+<br>
 <!-- Section #1 -->
 <div id="section6" class="container-fluid">
   <div class="col-12 heading">
@@ -275,12 +402,13 @@ function scrollFunction() {
   <div class="container">
     <div class="col-6 text-center">
       <h5 class="like-my-profile animated fadeInLeft">Did you<br> like<br> my profile?</h5> 
-      <button class="btn btn-lg btn-success" data-toggle="tooltip" data-placement="right" title="Tell me how can I help?"><i class="fa fa-envelope-o" style="margin: 0;padding: 5px; padding-left: 0;"></i>Send me an email</button>
+      <button class="btn btn-lg btn-success" data-toggle="modal" data-target="#modal-contact"><i class="fa fa-envelope-o" style="margin: 0;padding: 5px; padding-left: 0;"></i>Contact Me</button>
     </div>
     <br>
     <div class="col-12 text-center">
        <p class="p-2">OR</p>
-      <a href="resume-arijeet-karmakar.pdf" download>Download CV</a>
+      <a href="resume-arijeet-karmakar.pdf" class="btn btn-info" download>Download CV</a>
+      <br><br>
       <p class="p-2">OR</p>
       <p>
         <a href="https://www.linkedin.com/in/arijeet-karmakar" target="_blank" class="fa fa-linkedin" data-toggle="tooltip" data-placement="left" data-title="Connect on Linkedin"></a>
@@ -293,6 +421,32 @@ function scrollFunction() {
     <a class="goUp" href="#section1" data-toggle="tooltip" data-placement="top" title="Let's start again. Shall we?"> 
     <img class="animated" src="images/icons/up_arrow.png"></a>
 </div>
+
+<!-- Modal -->
+<div class="modal fade" id="modal-contact" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body">
+        <address>
+          <h4>Email</h4>
+          <i class="fa fa-envelope-o" style="margin: 0;padding: 5px; padding-left: 0;"></i><a href="mailto:arijitk65@gmail.com">arijitk65@gmail.com</a> 
+          <h4>Number</h4>
+          <i class="fa fa-phone" style="margin: 0;padding: 5px; padding-left: 0;"></i><a href="tel:+91 8017920596">+91 8017920596</a>
+          <h4>Location</h4>
+          <i class="fa fa-map-marker" style="margin: 0;padding: 5px; padding-left: 0;"></i>Bangalore
+        </address>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-danger" data-dismiss="modal">Close</button>
+      </div>
+    </div>
+  </div>
+</div>
 <script>
   $(function () {
   $('[data-toggle="tooltip"]').tooltip()
@@ -300,3 +454,54 @@ function scrollFunction() {
 </script>
 </body>
 </html>
+
+
+
+<!--        <h2 class="featurette-heading">Skills</h2>
+        <p class="skills">
+          <img src="images/logos/html5.png" alt="HTML5" data-toggle="tooltip" data-placement="bottom" data-title="HTML">
+          <img src="images/logos/css3.png" alt="CSS3" data-toggle="tooltip" data-placement="top" data-title="CSS">
+          <img src="images/logos/JavaScript.png" alt="JavaScript" data-toggle="tooltip" data-placement="bottom" data-title=" JavaScript">
+          <img src="images/logos/bootstrap.jpg" alt="Bootstrap" data-toggle="tooltip" data-placement="top" data-title="Bootstrap">
+          <img src="images/logos/dialogflow.png" alt="Dialogflow" data-toggle="tooltip" data-placement="bottom" data-title=" Google's Dialogflow">
+        </p>
+  -->
+
+<!-- photographs -->
+  <!--
+  <div class="container">
+    <div class="row">
+      <p style="color: black; text-align: center; font-size: 25px; padding:20px;">Photography</p>
+      <div class="col-md-4">
+        <div class="card" style="color: black;">
+          <img src="images/view_01.JPG" class="card-img-top" alt="..." style="width: 100%; border-radius: 10px;">
+          <div class="card-body">
+            <h5 class="card-title">Card title</h5>
+            <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+            <a href="#" class="btn btn-primary">Go somewhere</a>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-4">
+        <div class="card" style="color: black;">
+          <img src="images/view_02.JPG" class="card-img-top" alt="..." style="width: 100%; border-radius: 10px;">
+          <div class="card-body">
+            <h5 class="card-title">Card title</h5>
+            <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+            <a href="#" class="btn btn-primary">Go somewhere</a>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-4">
+        <div class="card" style="color: black;">
+          <img src="images/view_03.JPG" class="card-img-top" alt="..." style="width: 100%; border-radius: 10px;">
+          <div class="card-body">
+            <h5 class="card-title">Card title</h5>
+            <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+            <a href="images/view_03.JPG" target="_blank" class="btn btn-primary">View full image</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  -->
