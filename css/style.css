@@ -92,7 +92,7 @@ body {
     width: 50px;
     height: 50px;
   }
-  .goUp {
+  .goTop {
   border-radius: 50%;
   position: absolute;
   display: block;
@@ -107,11 +107,11 @@ body {
   left: 0;
   right: 0;
   }
-  .goUp:hover {
+  .goTop:hover {
     border: 1px solid white;
     background: rgba(255,255,255,1);
   }
-  .goUp img {
+  .goTop img {
     position: relative;
     width: 30px;
     height: 30px;
@@ -434,6 +434,9 @@ background-image: linear-gradient(62deg, #8EC5FC 0%, #E0C3FC 100%);
   }
   .modal .modal-body address {
     background: rgba(255,255,255,.6);
+  }
+  .goTop {
+    background: rgba(255,255,255,.8);
   }
 
  }
